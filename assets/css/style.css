@@ -1,0 +1,458 @@
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END CSS Reset */
+
+
+
+/* General styling ========================================== */ 
+
+/* Header overall */
+header {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    background-color: #ffffff;
+    border-bottom: 2px solid #cccccc;
+    width: 100%;
+    height: 55px;
+    margin: 0;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 10px #777777;
+    z-index: 100;
+    line-height: 55px;
+}
+
+/* Title */
+h1 a {
+    background-color: #4aaaa5;
+    text-decoration: none;
+    display: inline;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 30px;
+    margin: 0;
+    font-size: 40px;
+    position: fixed;
+    top: 0;
+    left: 15%;
+}
+
+h1 a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Nav */
+ul {
+    position: relative;
+    left: 60%;
+}
+
+ul li {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    display: inline;
+    color: #777777;
+    margin: 10px;
+}
+
+ul li a {
+    color: #777777;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #777777;
+    text-decoration: underline;
+}
+
+/* Body styling ========================================== */
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    width: 960px;
+    margin: 0 auto;
+    color: #777777;
+    background-image: url("../images/light_honeycomb.png");
+}
+
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 135px auto;
+    box-shadow: 0 0 5px #777777;
+}
+
+h2 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.headshot {
+    width: 200px;
+    float: left;
+    margin: 0 15px 15px 0;
+    box-shadow: 0 2px 5px #777777;
+    border-radius: 4px;
+    padding: 0;
+}
+
+p {
+    margin: 10px;
+}
+
+/* Footer styling ========================================== */
+footer {
+    background-color: #666666;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    border-top: 10px solid #4aaaa5;
+    color: #9e9e9e;
+    box-shadow: 0 0  5px #777777;
+}
+
+/* Contact Form Styling */
+form {
+    margin: 5px 10px 10px;
+    overflow: hidden;
+}
+
+input {
+    width: 95%;
+    margin: 0 0 20px;
+    padding: 5px 5px;
+    float: left;
+    border: 1px solid #777777;
+}
+
+ .btn-primary {
+     color: #ffffff;
+     background-color: #4aaaa5;
+     border: none;
+ }
+
+ .btn-primary:hover {
+     background-color: #777777;
+ }
+
+textarea {
+     padding: 0 5px 75px;
+     margin-bottom: 15px;
+     width: 95%;
+     overflow: scroll;
+     resize: both;
+     border: 1px solid #777777;
+ }
+
+ .submit {
+    color: #ffffff;
+    background-color: #4aaaa5;
+    width: 100px;
+    height: 40px;
+    border: none;
+}
+
+ /* Portfolio Styling     */
+.wrapper {
+    position: static;
+    overflow: hidden;
+}
+
+.wrapper p {
+    position: relative;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    height: 30px;
+    line-height: 30px; 
+    width: 400px;
+    margin: 0 auto;
+    display: inline-block;    
+}
+
+.box {
+    float: left;
+    position: relative;
+    width: 400px;
+    margin: 10px;
+    border-radius: 4px;
+    left: 0;
+}
+
+.label {
+    top: -50px;
+    left: 0;
+} 
+
+.image {
+    border-radius: 4px;
+    box-shadow: 0 5px 5px #777777;
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 980px or less.
+*/
+
+
+@media screen and (max-width: 980px) and (min-width: 768px){
+        /* General */
+        body {
+            width: 980px;
+        }
+
+        header {
+            height: 35px;
+        }
+    
+        header .title a {
+            position: fixed;
+            left: 15px;
+            top: 0;
+            display: block;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        nav {
+            margin: 0 10px 0 0;
+        }
+    
+        section {
+            width: 70%;
+            margin: 175px auto auto 20px;
+            padding: 10px auto;
+        }
+        
+        .container {
+            width: 90%;
+            padding: 0;
+            margin: 0 auto;
+        }
+    
+        p {
+            padding: 0;
+        }
+        
+        .headshot {
+            width: 50%;
+        }
+    
+        /* Portfolio */
+        .image {
+            margin: auto;
+            width: 100%;
+            padding: 0;
+        }
+    
+        p .label {
+            top: -65px;
+            left: 0;
+            width: 100%;
+        } 
+
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+
+@media screen and (max-width: 768px) and (min-width: 640px){
+        /* General */
+        body {
+            width: 768px;
+        }
+
+        header {
+            height: 35px;
+        }
+    
+        header .title a {
+            position: fixed;
+            left: 15px;
+            top: 0;
+            display: block;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        nav {
+            margin: 0 10px 0 0;
+        }
+    
+        section {
+            width: 90%;
+            margin: 175px auto;
+            padding: 10px auto;
+        }
+        
+        .container {
+            width: 90%;
+            padding: 0;
+            margin: 0 auto;
+        }
+    
+        p {
+            padding: 0;
+        }
+        
+        .headshot {
+            width: 50%;
+        }
+    
+        /* Portfolio */
+        .image {
+            margin: auto;
+            width: 100%;
+            padding: 0;
+        }
+    
+        p .label {
+            top: -65px;
+            left: 0;
+            width: 100%;
+        } 
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 640px or less.
+*/
+
+@media screen and (max-width: 640px){
+    /* General */
+    body {
+        width: 640px;
+    }
+
+    header {
+        margin: 0;
+        padding: 50px 0;
+        text-align: left;
+    }
+
+    header .title a {
+        width: 100%;
+        display: block;
+        margin: 0;
+        position: fixed;
+        left: 0;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .nav {
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        z-index: 100;
+    }
+
+    ul {
+        position: relative;
+        top: 40px;
+        left: 0;
+        text-align: center;
+    }
+
+    section {
+        width: 90%;
+        margin: 175px auto;
+        padding: 10px auto;
+    }
+    
+    .container {
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    p {
+        padding: 10px 0;
+    }
+    
+    .headshot {
+        width: 100%;
+    }
+
+    /* Portfolio */
+    .wrapper {
+        margin: auto;
+    }
+    
+    .image {
+        float: none;
+        margin: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    .label {
+        top: -65px;
+        left: 0;
+        width: 100%;
+    } 
+    
+}
