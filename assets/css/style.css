@@ -85,7 +85,23 @@ h1 a {
     position: fixed;
     top: 0;
     left: 15%;
+    -webkit-animation-name: colorshift; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+    animation-name: colorshift;
+    animation-duration: 6s;
 }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes colorshift {
+    from {background-color: #7FFFFFFF;}
+    to {background-color: #4aaaa5;}
+  }
+  
+  /* Standard syntax */
+  @keyframes colorshift {
+    from {background-color: #7FFFFFFF;}
+    to {background-color: #4aaaa5;}
+  }
 
 h1 a:hover {
     text-decoration: none;
@@ -139,7 +155,23 @@ h2 {
     border-bottom: 2px solid #cccccc;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    -webkit-animation-name: colorshift2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+    animation-name: colorshift2;
+    animation-duration: 6s;
 }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes colorshift2 {
+    from {color: #ffffff;}
+    to {color: #4aaaa5;}
+  }
+  
+  /* Standard syntax */
+  @keyframes colorshift2 {
+    from {color: #ffffff;}
+    to {color: #4aaaa5;}
+  }
 
 .headshot {
     width: 200px;
@@ -183,15 +215,27 @@ input {
     border: 1px solid #777777;
 }
 
- .btn-primary {
+ .submit {
      color: #ffffff;
      background-color: #4aaaa5;
      border: none;
+     -webkit-animation-name: colorshift3; /* Safari 4.0 - 8.0 */
+     -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+     animation-name: colorshift3;
+     animation-duration: 6s;
  }
-
- .btn-primary:hover {
-     background-color: #777777;
- }
+ 
+   /* Safari 4.0 - 8.0 */
+   @-webkit-keyframes colorshift3 {
+     from {background-color: #ffffff;}
+     to {background-color: #4aaaa5;}
+   }
+   
+   /* Standard syntax */
+   @keyframes colorshift3 {
+     from {background-color: #ffffff;}
+     to {background-color: #4aaaa5;}
+   }
 
 textarea {
      padding: 0 5px 75px;
@@ -240,7 +284,23 @@ textarea {
 .label {
     top: -50px;
     left: 0;
-} 
+    -webkit-animation-name: colorshift4; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+    animation-name: colorshift4;
+    animation-duration: 6s;
+}
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes colorshift4 {
+    from {background-color: #7FFFFFFF;}
+    to {background-color: #4aaaa5;}
+  }
+  
+  /* Standard syntax */
+  @keyframes colorshift4 {
+    from {background-color: #7FFFFFFF;}
+    to {background-color: #4aaaa5;}
+  }
 
 .image {
     border-radius: 4px;
@@ -256,7 +316,7 @@ textarea {
 @media screen and (max-width: 980px) and (min-width: 768px){
         /* General */
         body {
-            width: 980px;
+            width: 100%;
         }
 
         header {
@@ -320,7 +380,7 @@ textarea {
 @media screen and (max-width: 768px) and (min-width: 640px){
         /* General */
         body {
-            width: 768px;
+            width: 100%;
         }
 
         header {
