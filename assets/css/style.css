@@ -227,13 +227,13 @@ input {
  
    /* Safari 4.0 - 8.0 */
    @-webkit-keyframes colorshift3 {
-     from {background-color: #ffffff;}
+     from {background-color: #7FFFFFFF;}
      to {background-color: #4aaaa5;}
    }
    
    /* Standard syntax */
    @keyframes colorshift3 {
-     from {background-color: #ffffff;}
+     from {background-color: #7FFFFFFF;}
      to {background-color: #4aaaa5;}
    }
 
