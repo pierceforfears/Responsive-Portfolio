@@ -383,7 +383,7 @@ textarea {
 @media screen and (max-width: 640px){
     /* General */
     body {
-        width: 640px;
+        width: 100%;
     }
 
     header {
