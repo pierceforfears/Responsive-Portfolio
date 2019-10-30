@@ -19,7 +19,7 @@
       }
       h1 {
         font-size: 100px;
-        padding: 100px;
+        padding: 10px auto;
       }
       a {
         text-decoration: none;
@@ -54,14 +54,14 @@
       a:active {
         transform: translateY(-14px);
       }
-      input {
-        border: 0;
-        padding: 10px;
-        font-size: 18px;
-      }
-      input[type="submit"] {
-        background: red;
-        color: white;
+      @media screen and (max-width: 640px) {
+        body {
+          width: 100%;
+        }
+        h1 {
+          font-size: 70px;
+          padding: 10px auto;
+        }
       }
     </style>
   </head>
