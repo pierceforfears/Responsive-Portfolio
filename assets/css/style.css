@@ -5,306 +5,417 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* END CSS Reset */
 
-
-
-/* General styling ========================================== */ 
+/* General styling ========================================== */
 
 /* Header overall */
 header {
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    background-color: #ffffff;
-    border-bottom: 2px solid #cccccc;
-    width: 100%;
-    height: 55px;
-    margin: 0;
-    padding: 30px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-shadow: 0 0 10px #777777;
-    z-index: 100;
-    line-height: 55px;
+  font-family: "Georgia", Times, "Times New Roman", serif;
+  background-color: #ffffff;
+  border-bottom: 2px solid #cccccc;
+  width: 100%;
+  height: 55px;
+  margin: 0;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 10px #777777;
+  z-index: 100;
+  line-height: 55px;
 }
 
 /* Title */
 h1 a {
-    background-color: #4aaaa5;
-    text-decoration: none;
-    display: inline;
-    color: #ffffff;
-    font-weight: 600;
-    padding: 30px;
-    margin: 0;
-    font-size: 40px;
-    position: fixed;
-    top: 0;
-    left: 15%;
-    -webkit-animation-name: colorshift; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
-    animation-name: colorshift;
-    animation-duration: 6s;
+  background-color: #4aaaa5;
+  text-decoration: none;
+  display: inline;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 30px;
+  margin: 0;
+  font-size: 40px;
+  position: fixed;
+  top: 0;
+  left: 15%;
+  -webkit-animation-name: colorshift; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+  animation-name: colorshift;
+  animation-duration: 6s;
 }
 
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes colorshift {
-    from {background-color: #7FFFFFFF;}
-    to {background-color: #4aaaa5;}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes colorshift {
+  from {
+    background-color: #7fffffff;
   }
-  
-  /* Standard syntax */
-  @keyframes colorshift {
-    from {background-color: #7FFFFFFF;}
-    to {background-color: #4aaaa5;}
+  to {
+    background-color: #4aaaa5;
   }
+}
+
+/* Standard syntax */
+@keyframes colorshift {
+  from {
+    background-color: #7fffffff;
+  }
+  to {
+    background-color: #4aaaa5;
+  }
+}
 
 h1 a:hover {
-    text-decoration: none;
-    color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /* Nav */
 ul {
-    position: relative;
-    left: 60%;
+  position: relative;
+  left: 60%;
 }
 
 ul li {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    display: inline;
-    color: #777777;
-    margin: 10px;
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  display: inline;
+  color: #777777;
+  margin: 10px;
 }
 
 ul li a {
-    color: #777777;
-    text-decoration: none;
+  color: #777777;
+  text-decoration: none;
 }
 
 ul li a:hover {
-    color: #777777;
-    text-decoration: underline;
+  color: #777777;
+  text-decoration: underline;
 }
 
 /* Body styling ========================================== */
 body {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    width: 960px;
-    margin: 0 auto;
-    color: #777777;
-    background-image: url("../images/light_honeycomb.png");
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  width: 960px;
+  margin: 0 auto;
+  color: #777777;
+  /* background-image: url("../images/light_honeycomb.png"); */
 }
 
 section {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 135px auto;
-    box-shadow: 0 0 5px #777777;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 135px auto;
+  box-shadow: 0 0 5px #777777;
 }
 
 h2 {
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    color: #4aaaa5;
-    font-size: 25px;
-    font-weight: 600;
-    border-bottom: 2px solid #cccccc;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    -webkit-animation-name: colorshift2; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
-    animation-name: colorshift2;
-    animation-duration: 6s;
+  font-family: "Georgia", Times, "Times New Roman", serif;
+  color: #4aaaa5;
+  font-size: 25px;
+  font-weight: 600;
+  border-bottom: 2px solid #cccccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  -webkit-animation-name: colorshift2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+  animation-name: colorshift2;
+  animation-duration: 6s;
 }
 
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes colorshift2 {
-    from {color: #ffffff;}
-    to {color: #4aaaa5;}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes colorshift2 {
+  from {
+    color: #ffffff;
   }
-  
-  /* Standard syntax */
-  @keyframes colorshift2 {
-    from {color: #ffffff;}
-    to {color: #4aaaa5;}
+  to {
+    color: #4aaaa5;
   }
+}
+
+/* Standard syntax */
+@keyframes colorshift2 {
+  from {
+    color: #ffffff;
+  }
+  to {
+    color: #4aaaa5;
+  }
+}
 
 .headshot {
-    width: 200px;
-    float: left;
-    margin: 0 15px 15px 0;
-    box-shadow: 0 2px 5px #777777;
-    border-radius: 4px;
-    padding: 0;
+  width: 200px;
+  float: left;
+  margin: 0 15px 15px 0;
+  box-shadow: 0 2px 5px #777777;
+  border-radius: 4px;
+  padding: 0;
 }
 
 p {
-    margin: 10px;
+  margin: 10px;
 }
 
 /* Footer styling ========================================== */
 footer {
-    background-color: #666666;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 15px;
-    border-top: 10px solid #4aaaa5;
-    color: #9e9e9e;
-    box-shadow: 0 0  5px #777777;
+  background-color: #666666;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  border-top: 10px solid #4aaaa5;
+  color: #9e9e9e;
+  box-shadow: 0 0 5px #777777;
 }
 
 /* Contact Form Styling */
 form {
-    margin: 5px 10px 10px;
-    overflow: hidden;
+  margin: 5px 10px 10px;
+  overflow: hidden;
 }
 
 input {
-    width: 95%;
-    margin: 0 0 20px;
-    padding: 5px 5px;
-    float: left;
-    border: 1px solid #777777;
+  width: 95%;
+  margin: 0 0 20px;
+  padding: 5px 5px;
+  float: left;
+  border: 1px solid #777777;
 }
 
- .submit {
-     color: #ffffff;
-     background-color: #4aaaa5;
-     border: none;
-     -webkit-animation-name: colorshift3; /* Safari 4.0 - 8.0 */
-     -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
-     animation-name: colorshift3;
-     animation-duration: 6s;
- }
- 
-   /* Safari 4.0 - 8.0 */
-   @-webkit-keyframes colorshift3 {
-     from {background-color: #7FFFFFFF;}
-     to {background-color: #4aaaa5;}
-   }
-   
-   /* Standard syntax */
-   @keyframes colorshift3 {
-     from {background-color: #7FFFFFFF;}
-     to {background-color: #4aaaa5;}
-   }
+.submit {
+  color: #ffffff;
+  background-color: #4aaaa5;
+  border: none;
+  -webkit-animation-name: colorshift3; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+  animation-name: colorshift3;
+  animation-duration: 6s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes colorshift3 {
+  from {
+    background-color: #7fffffff;
+  }
+  to {
+    background-color: #4aaaa5;
+  }
+}
+
+/* Standard syntax */
+@keyframes colorshift3 {
+  from {
+    background-color: #7fffffff;
+  }
+  to {
+    background-color: #4aaaa5;
+  }
+}
 
 textarea {
-     padding: 0 5px 75px;
-     margin-bottom: 15px;
-     width: 95%;
-     overflow: scroll;
-     resize: both;
-     border: 1px solid #777777;
- }
-
- .submit {
-    color: #ffffff;
-    background-color: #4aaaa5;
-    width: 100px;
-    height: 40px;
-    border: none;
+  padding: 0 5px 75px;
+  margin-bottom: 15px;
+  width: 95%;
+  overflow: scroll;
+  resize: both;
+  border: 1px solid #777777;
 }
 
- /* Portfolio Styling     */
+.submit {
+  color: #ffffff;
+  background-color: #4aaaa5;
+  width: 100px;
+  height: 40px;
+  border: none;
+}
+
+/* Portfolio Styling     */
 .wrapper {
-    position: static;
-    overflow: hidden;
+  position: static;
+  overflow: hidden;
 }
 
 .wrapper p {
-    position: relative;
-    background-color: #4aaaa5;
-    color: #ffffff;
-    text-align: center;
-    height: 30px;
-    line-height: 30px; 
-    width: 400px;
-    margin: 0 auto;
-    display: inline-block;    
+  position: relative;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  width: 400px;
+  margin: 0 auto;
+  display: inline-block;
 }
 
 .box {
-    float: left;
-    position: relative;
-    width: 400px;
-    margin: 10px;
-    border-radius: 4px;
-    left: 0;
+  float: left;
+  position: relative;
+  width: 400px;
+  margin: 10px;
+  border-radius: 4px;
+  left: 0;
 }
 
 .label {
-    top: -50px;
-    left: 0;
-    -webkit-animation-name: colorshift4; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
-    animation-name: colorshift4;
-    animation-duration: 6s;
+  top: -50px;
+  left: 0;
+  -webkit-animation-name: colorshift4; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+  animation-name: colorshift4;
+  animation-duration: 6s;
 }
 
-  /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes colorshift4 {
-    from {background-color: #7FFFFFFF;}
-    to {background-color: #4aaaa5;}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes colorshift4 {
+  from {
+    background-color: #7fffffff;
   }
-  
-  /* Standard syntax */
-  @keyframes colorshift4 {
-    from {background-color: #7FFFFFFF;}
-    to {background-color: #4aaaa5;}
+  to {
+    background-color: #4aaaa5;
   }
+}
+
+/* Standard syntax */
+@keyframes colorshift4 {
+  from {
+    background-color: #7fffffff;
+  }
+  to {
+    background-color: #4aaaa5;
+  }
+}
 
 .image {
-    border-radius: 4px;
-    box-shadow: 0 5px 5px #777777;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px #777777;
 }
 
 /*
@@ -312,64 +423,62 @@ textarea {
   is either 980px or less.
 */
 
+@media screen and (max-width: 980px) and (min-width: 768px) {
+  /* General */
+  body {
+    width: 100%;
+  }
 
-@media screen and (max-width: 980px) and (min-width: 768px){
-        /* General */
-        body {
-            width: 100%;
-        }
+  header {
+    height: 35px;
+  }
 
-        header {
-            height: 35px;
-        }
-    
-        header .title a {
-            position: fixed;
-            left: 15px;
-            top: 0;
-            display: block;
-            margin: 0;
-            text-align: center;
-            padding: 20px;
-        }
-        
-        nav {
-            margin: 0 10px 0 0;
-        }
-    
-        section {
-            width: 70%;
-            margin: 175px auto auto 20px;
-            padding: 10px auto;
-        }
-        
-        .container {
-            width: 90%;
-            padding: 0;
-            margin: 0 auto;
-        }
-    
-        p {
-            padding: 0;
-        }
-        
-        .headshot {
-            width: 50%;
-        }
-    
-        /* Portfolio */
-        .image {
-            margin: auto;
-            width: 100%;
-            padding: 0;
-        }
-    
-        p .label {
-            top: -65px;
-            left: 0;
-            width: 100%;
-        } 
+  header .title a {
+    position: fixed;
+    left: 15px;
+    top: 0;
+    display: block;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+  }
 
+  nav {
+    margin: 0 10px 0 0;
+  }
+
+  section {
+    width: 70%;
+    margin: 175px auto auto 20px;
+    padding: 10px auto;
+  }
+
+  .container {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  p {
+    padding: 0;
+  }
+
+  .headshot {
+    width: 50%;
+  }
+
+  /* Portfolio */
+  .image {
+    margin: auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  p .label {
+    top: -65px;
+    left: 0;
+    width: 100%;
+  }
 }
 
 /*
@@ -377,62 +486,62 @@ textarea {
   is either 768px or less.
 */
 
-@media screen and (max-width: 768px) and (min-width: 640px){
-        /* General */
-        body {
-            width: 100%;
-        }
+@media screen and (max-width: 768px) and (min-width: 640px) {
+  /* General */
+  body {
+    width: 100%;
+  }
 
-        header {
-            height: 35px;
-        }
-    
-        header .title a {
-            position: fixed;
-            left: 15px;
-            top: 0;
-            display: block;
-            margin: 0;
-            text-align: center;
-            padding: 20px;
-        }
-        
-        nav {
-            margin: 0 10px 0 0;
-        }
-    
-        section {
-            width: 90%;
-            margin: 175px auto;
-            padding: 10px auto;
-        }
-        
-        .container {
-            width: 90%;
-            padding: 0;
-            margin: 0 auto;
-        }
-    
-        p {
-            padding: 0;
-        }
-        
-        .headshot {
-            width: 50%;
-        }
-    
-        /* Portfolio */
-        .image {
-            margin: auto;
-            width: 100%;
-            padding: 0;
-        }
-    
-        p .label {
-            top: -65px;
-            left: 0;
-            width: 100%;
-        } 
+  header {
+    height: 35px;
+  }
+
+  header .title a {
+    position: fixed;
+    left: 15px;
+    top: 0;
+    display: block;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+  }
+
+  nav {
+    margin: 0 10px 0 0;
+  }
+
+  section {
+    width: 90%;
+    margin: 175px auto;
+    padding: 10px auto;
+  }
+
+  .container {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  p {
+    padding: 0;
+  }
+
+  .headshot {
+    width: 50%;
+  }
+
+  /* Portfolio */
+  .image {
+    margin: auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  p .label {
+    top: -65px;
+    left: 0;
+    width: 100%;
+  }
 }
 
 /*
@@ -440,79 +549,78 @@ textarea {
   is either 640px or less.
 */
 
-@media screen and (max-width: 640px){
-    /* General */
-    body {
-        width: 100%;
-    }
+@media screen and (max-width: 640px) {
+  /* General */
+  body {
+    width: 100%;
+  }
 
-    header {
-        margin: 0;
-        padding: 50px 0;
-        text-align: left;
-    }
+  header {
+    margin: 0;
+    padding: 50px 0;
+    text-align: left;
+  }
 
-    header .title a {
-        width: 100%;
-        display: block;
-        margin: 0;
-        position: fixed;
-        left: 0;
-        text-align: center;
-        padding: 20px 0;
-    }
-    
-    .nav {
-        float: none;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        z-index: 100;
-    }
+  header .title a {
+    width: 100%;
+    display: block;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    text-align: center;
+    padding: 20px 0;
+  }
 
-    ul {
-        position: relative;
-        top: 40px;
-        left: 0;
-        text-align: center;
-    }
+  .nav {
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+  }
 
-    section {
-        width: 90%;
-        margin: 175px auto;
-        padding: 10px auto;
-    }
-    
-    .container {
-        width: 90%;
-        padding: 0;
-        margin: 0 auto;
-    }
+  ul {
+    position: relative;
+    top: 40px;
+    left: 0;
+    text-align: center;
+  }
 
-    p {
-        padding: 10px 0;
-    }
-    
-    .headshot {
-        width: 100%;
-    }
+  section {
+    width: 90%;
+    margin: 175px auto;
+    padding: 10px auto;
+  }
 
-    /* Portfolio */
-    .wrapper {
-        margin: auto;
-    }
-    
-    .image {
-        float: none;
-        margin: auto;
-        width: 100%;
-        padding: 0;
-    }
+  .container {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+  }
 
-    .label {
-        top: -65px;
-        left: 0;
-        width: 100%;
-    } 
-    
+  p {
+    padding: 10px 0;
+  }
+
+  .headshot {
+    width: 100%;
+  }
+
+  /* Portfolio */
+  .wrapper {
+    margin: auto;
+  }
+
+  .image {
+    float: none;
+    margin: auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  .label {
+    top: -65px;
+    left: 0;
+    width: 100%;
+  }
 }

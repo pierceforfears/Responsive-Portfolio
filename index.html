@@ -1,52 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Invisible Pixel Studios</title>
+    <style>
+      body {
+        text-align: center;
+        background: url("https://lh3.googleusercontent.com/WW9IHARPwWZBSuIxjj4r2gxZtWeBiDO73pTsly_3sZUVkS3ZyPyqGhEpg_3sVVuycYiHAyJ03XiMhx9deBQ8XeNeKE93thk9cBHFC51ajiuVNtwUjY_7AdX8Cp79ntCyb0ktoarT_X-3V9FCKYErdbgacY66k-cRcZ32y3XIuRF1gcyxIrjbPQ6yxzDLJ9L8HjMDU2e87GcGcUCcr_Nr5RDP1k1xz84402GvmE4aOPHdk8zKki9qWPfD7f3mQ2KDRy7LF_8ouTj9tEivCeJHe4hLOP8IwPlm4QssLs1eAA_y1nNo5fZQWmQNHzzumfdtdDWUHebP7ECha0-FDCGcKmLoaFqDVJQdfj5rsIKG6mQJuxft4gsuc5-3WI6AOcww2NVucNJiuD10bYRVkG_Z04m38Ot6lHBqQ4YtDTUETdFKS3sEmS1WWsCyATG8jc75tHgapJMBA5GS1IWD1cO4gbNvI85hw2l0BV_hF49dbpeItprwbCzqMynKEuYvJYO2m_LFwfUcGp4LOxXjoqs8HOUnJh2OxNmlKaBpWX8R8glEWcYSQ1y1DSJB4WhbYdYWhIERDgGXKG5-F6Q3bLOmSGviYBhFLdDljWFV63ztTBFhTXShwwqU1iXuC_EW6CIEZH8lgMNKQjywdVsz35W-q5dMKJ-efdxQlhMkR3sY6HdMUw=w1630-h799-no");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: white;
+        font-weight: bold;
+        font-family: helvetica;
+      }
+      h1 {
+        font-size: 100px;
+        padding: 100px;
+      }
+      a {
+        text-decoration: none;
+        color: #e0dedf;
+        -webkit-animation-name: colorshift; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+        animation-name: colorshift;
+        animation-duration: 10s;
+      }
+      /* Safari 4.0 - 8.0 */
+      @-webkit-keyframes colorshift {
+        from {
+          color: #c4c2c7;
+        }
+        to {
+          color: #e0dedf;
+        }
+      }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Robert Pierce - Responsive Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
-    <header>
-        <h1 class="title"><a href="index.html">Robert&nbsp;Pierce</a></h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li>|</li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li>|</li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <div class="container">
-            <h2>About Me</h2>
-            <img class="headshot" src="assets/images/pierce_image1.jpg" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates dolorum velit enim veritatis
-                veniam distinctio beatae officia et, voluptas blanditiis accusantium debitis laboriosam assumenda
-                adipisci
-                quos earum dicta qui.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates dolorum velit enim veritatis
-                veniam distinctio beatae officia et, voluptas blanditiis accusantium debitis laboriosam assumenda
-                adipisci
-                quos earum dicta qui.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates dolorum velit enim veritatis
-                veniam distinctio beatae officia et, voluptas blanditiis accusantium debitis laboriosam assumenda
-                adipisci
-                quos earum dicta qui.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates dolorum velit enim veritatis
-                veniam distinctio beatae officia et, voluptas blanditiis accusantium debitis laboriosam assumenda
-                adipisci
-                quos earum dicta qui.</p>
-        </div>
-    </section>
-    <footer>&copy; 2019 Copyright Invisible Pixel LLC</footer>
-
-
-</body>
-
+      /* Standard syntax */
+      @keyframes colorshift {
+        from {
+          color: #c4c2c7;
+        }
+        to {
+          color: #e0dedf;
+        }
+      }
+      a:hover {
+        color: #c4c2c7;
+      }
+      a:active {
+        transform: translateY(-14px);
+      }
+      input {
+        border: 0;
+        padding: 10px;
+        font-size: 18px;
+      }
+      input[type="submit"] {
+        background: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href="about.html">invisible pixel</a></h1>
+  </body>
 </html>
